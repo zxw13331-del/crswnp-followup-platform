@@ -1,0 +1,10 @@
+{
+  "fields": [
+    {"name": "demo_code", "label": "模拟病例编号", "description": "系统生成的非真实研究编号"},
+    {"name": "risk_probability", "label": "模拟风险概率", "description": "由演示 Logistic 系数计算，非临床模型"},
+    {"name": "snot22_score", "label": "SNOT-22 模拟分", "description": "0-110，数值越高症状越重"},
+    {"name": "polyp_score", "label": "鼻息肉评分", "description": "0-8 的模拟内镜评分"},
+    {"name": "adherence_score", "label": "依从性评分", "description": "0-1，数值越高表示模拟依从性越好"}
+  ],
+  "privacy_notice": "本系统仅允许使用模拟数据，禁止录入真实身份、联系方式、住院号、门诊号等可识别信息。"
+}

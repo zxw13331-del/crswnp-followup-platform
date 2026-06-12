@@ -1,0 +1,10 @@
+{
+  "model_version": "CRSwNP-FOLLOWUP-DEMO-v0.1",
+  "nodes": [
+    {"month": 1, "title": "术后 1 个月随访", "items": ["症状评分", "用药依从性", "鼻内镜模拟记录"]},
+    {"month": 3, "title": "术后 3 个月随访", "items": ["症状评分", "鼻喷雾使用", "鼻腔冲洗使用"]},
+    {"month": 6, "title": "术后 6 个月随访", "items": ["复发风险复评", "生活质量问卷", "随访结局"]},
+    {"month": 12, "title": "术后 12 个月随访", "items": ["年度复评", "科研结局归档"]}
+  ],
+  "status_labels": {"pending": "待随访", "completed": "已完成", "overdue": "已逾期"}
+}

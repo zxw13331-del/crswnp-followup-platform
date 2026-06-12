@@ -1,0 +1,25 @@
+{
+  "model_version": "CRSwNP-DEMO-v0.1",
+  "disclaimer": "仅用于科研概念验证，不可直接用于临床诊疗决策。",
+  "intercept": -3.2,
+  "coefficients": {
+    "age": 0.012,
+    "eosinophil_percent": 0.18,
+    "tissue_eosinophil_level": 0.52,
+    "asthma": 0.75,
+    "allergic_rhinitis": 0.42,
+    "prior_surgery_count": 0.55,
+    "snot22_score": 0.025,
+    "polyp_score": 0.28,
+    "adherence_score": -0.7
+  },
+  "thresholds": {
+    "low_max": 0.2,
+    "medium_max": 0.5
+  },
+  "risk_labels": {
+    "low": "低风险",
+    "medium": "中风险",
+    "high": "高风险"
+  }
+}

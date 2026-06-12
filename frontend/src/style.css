@@ -1,0 +1,9 @@
+body { margin: 0; background: #f4f7fb; }
+.app-shell { min-height: 100vh; }
+.logo { padding: 18px; font-weight: 700; color: #1554ad; }
+.topbar { background: #fff; display: flex; justify-content: space-between; align-items: center; padding: 0 24px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.content { padding: 24px; }
+.warning { background: #fff7e6; border: 1px solid #ffd591; border-radius: 8px; padding: 10px 14px; margin-bottom: 16px; color: #ad6800; }
+.card-grid { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #e6f4ff, #f6ffed); }
+.login-card { width: 420px; }

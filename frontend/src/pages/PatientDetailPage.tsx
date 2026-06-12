@@ -7,7 +7,9 @@ export default function PatientDetailPage() {
   const { id } = useParams();
   const [patient, setPatient] = useState<Patient>();
   const load = () => api.get(`/api/patients/${id}`).then(r => setPatient(r.data));
-  useEffect(load, [id]);
+  useEffect(() => {
+    void load();
+  }, [id]);
   const risk = patient?.risk_assessments[patient.risk_assessments.length - 1];
   const recalc = async () => { await api.post(`/api/patients/${id}/risk-assessment`); message.success('已重新计算模拟风险'); load(); };
   if (!patient) return null;

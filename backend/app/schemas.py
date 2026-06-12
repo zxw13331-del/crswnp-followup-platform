@@ -1,4 +1,6 @@
 from datetime import date, datetime
+from typing import Optional
+
 from pydantic import BaseModel, ConfigDict, Field
 
 
@@ -18,7 +20,7 @@ class PatientBase(BaseModel):
 
 
 class PatientCreate(PatientBase):
-    demo_code: str | None = None
+    demo_code: Optional[str] = None
 
 
 class PatientUpdate(PatientBase):

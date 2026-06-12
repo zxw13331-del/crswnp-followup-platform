@@ -8,7 +8,9 @@ export default function PatientsPage() {
   const [q, setQ] = useState('');
   const [risk, setRisk] = useState('');
   const load = () => api.get('/api/patients', { params: { q, risk_level: risk } }).then(r => setPatients(r.data));
-  useEffect(load, [q, risk]);
+  useEffect(() => {
+    void load();
+  }, [q, risk]);
   const columns = [
     { title: '模拟编号', dataIndex: 'demo_code' }, { title: '性别', dataIndex: 'sex' }, { title: '年龄', dataIndex: 'age' }, { title: '手术日期', dataIndex: 'surgery_date' },
     { title: '风险', render: (_: unknown, p: Patient) => { const r = p.risk_assessments[p.risk_assessments.length - 1]; return r ? <Tag color={riskColor[r.risk_level]}>{riskLabel[r.risk_level]} {(r.probability * 100).toFixed(1)}%</Tag> : '-'; } },
